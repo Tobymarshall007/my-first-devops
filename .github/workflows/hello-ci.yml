@@ -1,0 +1,12 @@
+name: My First CI Robot
+
+# กำหนดให้ระบบทำงานทุกครั้งที่มีการอัปเดตโค้ด (push) เข้าสู่คลาวด์
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a greeting message
+        run: echo "Hello DevOps! ระบบ CI เริ่มทำงานเรียบร้อยแล้ว"
